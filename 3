@@ -1,0 +1,5 @@
+x = np.array(data["title"]) #X adalah variabel yang memuat kolom title pada dataset dimana kolom ini akan digunakan untuk melatih model machine learning
+y = np.array(data["label"]) #Y adalah variabel yang memuat kolom label pada dataset dimana kolom ini akan digunakan sebagai nilai yang ingin diprediksi
+
+cv = CountVectorizer()
+x = cv.fit_transform(x)
