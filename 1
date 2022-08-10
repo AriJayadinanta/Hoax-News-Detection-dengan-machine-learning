@@ -1,0 +1,8 @@
+#Impor library yang diperlukan 
+import pandas as pd #Library untuk memudahkan analisis data, manipulasi data, dan pembersihan data
+import numpy as np #Library untuk bekerja dengan array dan juga memiliki fungsi yang bekerja dalam domain aljabar linier, transformasi fourier, dan matriks.
+from sklearn.feature_extraction.text import CountVectorizer #untuk mengonversi kumpulan dokumen teks menjadi vektor jumlah term/token
+from sklearn.model_selection import train_test_split #Untuk membagi dataset menjadi subset yang meminimalkan potensi bias dalam proses evaluasi dan validasi
+from sklearn.naive_bayes import MultinomialNB #Algoritma untuk melatih model
+from google.colab import drive #Untuk menghubungkan dengan google drive
+drive.mount('/content/gdrive')
